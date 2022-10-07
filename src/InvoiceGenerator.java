@@ -20,14 +20,13 @@ public class InvoiceGenerator {
     }
 
     public static void main(String[] args) {
-        double fareOne = CalculateFare(2, 5);
-        System.out.println("Fare is : " + fareOne);
-
         Ride[] rides = {new Ride(2.0, 5),
                 new Ride(5.0, 10),
                 new Ride(0.1, 1),
                 new Ride(20, 60)};
         double fareTwo = CalculateFare(rides);
-        System.out.println("Multiple Fare is : " + fareTwo);
+        System.out.println("Total Number of Rides : " + rides.length);
+        System.out.println("Total fare for Rides : " + fareTwo);
+        System.out.println("Average fare per Ride : " + fareTwo/ rides.length);
     }
 }
